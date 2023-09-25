@@ -1,0 +1,8 @@
+Dataset buscando uma api externa:
+https://fluiggers.com.br/t/dataset-buscando-de-url-externa/424
+
+Uncaught TypeError: DatasetFactory is not defined:
+https://fluiggers.com.br/t/datasetfactory-is-not-defined/818
+<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+
+
