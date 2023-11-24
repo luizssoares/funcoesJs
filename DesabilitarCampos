@@ -1,0 +1,33 @@
+//Essas funções devem ser utilizadas dentro de um EnableFields
+
+//Função para Desabilitar todos os Campos de Formulários automaticamente
+
+function disableAllFields(form) {
+
+	var fields = form.getCardData();
+	var iterare = fields.keySet().iterator();
+	while (iterare.hasNext()) {
+		var key = iterare.next();
+		form.setEnabled(key, false, false);
+	}
+}
+
+//Função para habilitar os Campos de acordo com a var Fields
+
+function enableFieldsFromList(form, fields) {
+	for (var i = 0; i < fields.length; i++) {
+		form.setEnabled(fields[i], true);
+	}
+}
+
+//Exemplo para utilização
+
+	if (Now_State == 7) {
+		disableAllFields(form);
+		fields = ['justificativa_gerencia']
+		enableFieldsFromList(form, fields)
+	}
+
+	if (Now_State == 6|| Now_State == 8 || Now_State == 13 || Now_State == 15) {
+		disableAllFields(form)
+	}
